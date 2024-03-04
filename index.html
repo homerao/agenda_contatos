@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de contatos</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="imgs/logo.png" alt="Logo">
+              <h1>Agenda de contatos</h1>
+        </header>
+        <form id="form-contato">
+          <input type="text" id="nome-contato" required="true" placeholder="Nome" />
+          <input type="tel" id="numero-telefone"  maxlength="11" onchange="validateRegex();"  required="true" placeholder="Número Telefone">
+          <button id="btn-add">Salvar</button>
+        </form>
+    
+        <table cellspacing="0" id="tb-agenda">
+            <thead>
+                <tr>
+                    <th>Nome do Contato</th>
+                    <th>Número do contato</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                
+<!--           <tr>           
+              <td>Matemática</td>
+                    <td>10</td>
+                    <td><img src="images/aprovado.png" alt=""></td> 
+                </tr>
+                -->
+                
+            </tbody>
+            
+            <tfoot id="tbfooter">
+      <!--           <tr>
+                    <td>Média final</td>
+                    <td>10</td>
+                     <td><span id="spanAprovado" class="resultado aprovado">Aprovado</span></td>
+                </tr>-->
+            </tfoot>
+        </table>
+    </div>
+    
+
+    <script src="./main.js"></script>
+</body>
+</html>
